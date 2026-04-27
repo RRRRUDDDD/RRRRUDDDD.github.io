@@ -1,20 +1,20 @@
 ---
-title: "Hello World：我的第一篇博客文章"
 description: "这是一篇示例文章，欢迎来到我的博客！"
-date: 2026-04-27
-slug: hello-world
-image: 
+title: "Hello World：我的第一篇博客文章"
+draft: true
+date: ""
+slug: "hello-world"
 categories:
-    - 随笔
+ - 随笔
 tags:
-    - 示例
-    - 入门
-draft: false
+ - 示例
+ - 入门
+image: ""
 ---
 
 ## 欢迎来到我的博客 👋
 
-你好！这是我博客的第一篇文章。
+### 你好！这是我博客的第一篇文章。
 
 在这里，我将记录学习过程中的点滴、分享技术心得，以及生活中值得留存的想法。希望这个小小的空间能为你带来一些启发或帮助。
 
