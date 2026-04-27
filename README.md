@@ -53,7 +53,7 @@ hugo server
 hugo --gc --minify
 ```
 
-## 5. 快速检查：Hugo 文件与主题文件是否丢失
+## 5. 快速检查: Hugo 文件与主题文件是否丢失
 
 本仓库使用 **Hugo Modules** 引入主题，所以仓库内看不到 `themes/hugo-theme-stack` 目录是正常的。  
 主题文件由 `go.mod` / `go.sum` / `config/_default/module.toml` 共同锁定和拉取。
