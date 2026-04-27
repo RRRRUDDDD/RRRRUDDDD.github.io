@@ -52,3 +52,22 @@ hugo server
 ```bash
 hugo --gc --minify
 ```
+
+## 5. 快速检查：Hugo 文件与主题文件是否丢失
+
+本仓库使用 **Hugo Modules** 引入主题，所以仓库内看不到 `themes/hugo-theme-stack` 目录是正常的。  
+主题文件由 `go.mod` / `go.sum` / `config/_default/module.toml` 共同锁定和拉取。
+
+可按下面命令自检：
+
+```bash
+# 1) 检查 Hugo 站点关键文件
+test -f config/_default/config.toml
+test -f config/_default/module.toml
+test -f go.mod
+test -f go.sum
+
+# 2) 检查主题模块是否可正常下载且完整
+go mod download github.com/CaiJimmy/hugo-theme-stack/v4
+go mod verify
+```
